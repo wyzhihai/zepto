@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<script src="js/zepto.js"></script>
+	<script src="js/touch.js"></script>
+	<style>
+		.box{
+			width:100px;
+			height:100px;
+			background:green;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">123</div>
+	<button class="btn">click</button>
+	<script>
+		$(function(){
+			$('.box').on('tap',function(){
+				alert('tap');
+			})
+		})
+	</script>
+</body>
+</html>
